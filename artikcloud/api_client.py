@@ -17,19 +17,13 @@ Copyright 2016 SmartBear Software
 
    ref: https://github.com/swagger-api/swagger-codegen
 """
-
-from __future__ import absolute_import
-from . import models
 from .rest import RESTClientObject
 from .rest import ApiException
 
 import os
 import re
-import sys
-import urllib
 import json
 import mimetypes
-import random
 import tempfile
 import threading
 
@@ -190,9 +184,7 @@ class ApiClient(object):
         :param obj: The data to serialize.
         :return: The serialized form of data.
         """
-        types = (str, int, long, float, bool, tuple)
-        if sys.version_info < (3,0):
-            types = types + (unicode,)
+        types = (str, int, float, bool, tuple)
         if isinstance(obj, type(None)):
             return None
         elif isinstance(obj, types):
@@ -273,7 +265,7 @@ class ApiClient(object):
             else:
                 klass = eval('models.' + klass)
 
-        if klass in [int, long, float, str, bool]:
+        if klass in [int, float, str, bool]:
             return self.__deserialize_primitive(data, klass)
         elif klass == object:
             return self.__deserialize_object(data)
@@ -505,7 +497,7 @@ class ApiClient(object):
         try:
             value = klass(data)
         except UnicodeEncodeError:
-            value = unicode(data)
+            value = str(data)
         except TypeError:
             value = data
         return value
