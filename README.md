@@ -1,10 +1,11 @@
-ARTIK Cloud Python SDK
+ARTIK Cloud Python 3.5 SDK
 ================
 
+This fork fixes the repo to support Python 3.5 and removes references to Python 2 code.
 This SDK helps you connect your Python scripts to ARTIK Cloud. The SDK helps authenticating with ARTIK Cloud, and exposes a number of methods to easily execute REST API calls to ARTIK Cloud.
 
 ## Requirements.
-Python 2.7 and later.
+Python 3.5 and later.
 
 ## Setuptools
 You can install the bindings via [Setuptools](http://pypi.python.org/pypi/setuptools).
@@ -35,7 +36,7 @@ import path.to.artikcloud
 
 ## Getting Started
 
-Peek into [tests](https://github.com/artikcloud/artikcloud-python/tree/master/tests) for examples about how to use the Python SDK.
+Peek into [tests](https://github.com/devinbarry/artikcloud-python/tree/master/tests) for examples about how to use the Python SDK.
 
 In addtion, you can look at our tutorial and sample applications. These will give you a good overview of what you can do and how to do it.
 
@@ -106,6 +107,6 @@ Also see the ARTIK Cloud blog for tutorials, updates, and more: http://artik.io/
 License and Copyright
 ---------------------
 
-Licensed under the Apache License. See [LICENSE](https://github.com/artikcloud/artikcloud-python/blob/master/LICENSE).
+Licensed under the Apache License. See [LICENSE](https://github.com/devinbarry/artikcloud-python/blob/master/LICENSE).
 
 Copyright (c) 2016 Samsung Electronics Co., Ltd.
