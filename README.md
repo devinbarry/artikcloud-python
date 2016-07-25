@@ -44,7 +44,7 @@ In addtion, you can look at our tutorial and sample applications. These will giv
 
 (Please make sure you have [virtualenv](http://docs.python-guide.org/en/latest/dev/virtualenvs/) installed)
 
- Execute the following command to run the tests in the current Python (v2 or v3) environment:
+ Execute the following command to run the tests in the current Python 3 environment:
 
 ```sh
 $ make test
