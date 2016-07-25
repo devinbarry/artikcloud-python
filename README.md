@@ -17,7 +17,7 @@ python setup.py install
 Or you can install from Github via pip:
 
 ```sh
-pip install git+https://github.com/artikcloud/artikcloud-python.git
+pip install git+https://github.com/devinbarry/artikcloud-python.git
 ```
 
 To use the bindings, import the package:
